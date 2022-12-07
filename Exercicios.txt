@@ -1,1 +1,99 @@
 Exercicios
+Exercicio 21 Roberto Iori:
+  static void Main(string[] args) {
+        int a,b, transformador;
+      Console.WriteLine("digite um numero para A");
+      a=int.Parse (Console.ReadLine());
+       Console.WriteLine("digite um numero para B");
+      b=int.Parse (Console.ReadLine());
+      transformador= a;
+      a=b;
+      b=transformador;
+
+
+      Console.WriteLine ("após inverter A={0} e B={1}",a, b);
+    }
+    
+Exercicio 31 Roberto Iori:
+        static void Main(string[] args)
+        {
+            const int tam = 5;
+            int[] n1 = new int[tam];
+            int i;
+            for (i = 0; i < tam; i++)
+            {
+                Console.WriteLine("Escreva o {0}° número", i + 1);
+                n1[i] = int.Parse(Console.ReadLine());
+            }
+            ParImpar(n1);
+            PositivoNegativo(n1);
+            Console.ReadKey();
+        }
+        static void ParImpar(int[] num1)
+        {
+            int i;
+            for(i = 0;i < num1.Length;i++)
+            {
+                if( i % 2 == 0)
+                {
+                    Console.WriteLine("{0} é número par", num1[i]);
+                }
+                else
+                {
+                    Console.WriteLine("{0} é número ímpar", num1[i]);
+                }
+            }
+        }
+        static void PositivoNegativo(int[] num2)
+        {
+            int i;
+            for (i = 0; i < num2.Length; i++)
+            {
+                if (i > 0)
+                {
+                    Console.WriteLine("{0} é número positivo", num2[i]);
+                }
+                else
+                {
+                    Console.WriteLine("{0} é número negativo", num2[i]);
+                }
+            }
+        }
+    }
+    
+Exercicio 35 Roberto Iori:
+using System;
+
+class Program {
+    static void Main(string[] args) {
+                int A, B, C;
+  
+        Console.WriteLine("Digite o lado A=");
+        A = int.Parse(Console.ReadLine());
+		
+        Console.WriteLine("Digite o lado B=");
+        B = int.Parse(Console.ReadLine());
+		
+		    Console.WriteLine("Digite o lado C=");
+        C = int.Parse(Console.ReadLine());
+
+
+		if( A < B + C && B < A + C && C < A + B ){
+      
+			if(A==B && B == C){
+				Console.WriteLine("O triângulo é Eqüilátero.");
+			}
+      else if(A==B || A==C || B==C){
+				Console.WriteLine("O triângulo é Isósceles.");
+			}
+      else{
+				Console.WriteLine("O triângulo é Escaleno.");
+			}
+		}
+      else{
+			Console.WriteLine("Os lados fornecidos não caracterizam um triângulo");
+		}
+
+    }
+
+}
