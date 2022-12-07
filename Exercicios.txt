@@ -1,1 +1,106 @@
 Exercicios
+Exercicio 21 Lavinia Moura:
+  static void Main(string[] args) {
+        int a,b, transformador;
+      Console.WriteLine("digite um numero para A");
+      a=int.Parse (Console.ReadLine());
+       Console.WriteLine("digite um numero para B");
+      b=int.Parse (Console.ReadLine());
+      transformador= a;
+      a=b;
+      b=transformador;
+
+
+      Console.WriteLine ("após inverter A={0} e B={1}",a, b);
+    }
+    
+Exercicio 31 Lavinia Moura:
+        static void Main(string[] args)
+        {
+            const int tam = 5;
+            int[] n1 = new int[tam];
+            int i;
+            for (i = 0; i < tam; i++)
+            {
+                Console.WriteLine("Escreva o {0}° número", i + 1);
+                n1[i] = int.Parse(Console.ReadLine());
+            }
+            ParImpar(n1);
+            PositivoNegativo(n1);
+            Console.ReadKey();
+        }
+        static void ParImpar(int[] num1)
+        {
+            int i;
+            for(i = 0;i < num1.Length;i++)
+            {
+                if( i % 2 == 0)
+                {
+                    Console.WriteLine("{0} é número par", num1[i]);
+                }
+                else
+                {
+                    Console.WriteLine("{0} é número ímpar", num1[i]);
+                }
+            }
+        }
+        static void PositivoNegativo(int[] num2)
+        {
+            int i;
+            for (i = 0; i < num2.Length; i++)
+            {
+                if (i > 0)
+                {
+                    Console.WriteLine("{0} é número positivo", num2[i]);
+                }
+                else
+                {
+                    Console.WriteLine("{0} é número negativo", num2[i]);
+                }
+            }
+        }
+    }
+Exercicio 35 Lavinia Moura:
+public struct Triangulo{
+
+
+static int ladoA;
+static int ladoB;
+static int ladoC;
+public void setLadoA(int valor)
+{
+ladoA = valor:
+}
+public void setLadoB/int valor)
+{
+ladoB = valor:
+}
+public void setLadoC(int valor)
+{
+ladoC = valor:
+}
+ public void Tipo()
+{
+if(ladoA== ladoB && ladoB == ladoC)
+{
+Console.WriteLine("Equilatero");
+}
+else if(lado ladoB && ladoB = ladoC && ladoC = ladoA)
+{
+Console.WriteLine("Escaleno");
+}
+else{
+Console.WriteLine("Isosceles");
+}
+}
+}
+static void Main(string[] args){
+
+Triangulo t = new Triangulo();
+
+t.setLadoA(10);
+t.setLadoB(10):
+t.setLadoC(10);
+Tipo(); 
+Console ReadKey():
+}
