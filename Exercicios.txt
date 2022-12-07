@@ -1,1 +1,92 @@
 Exercicios
+Exercício 21, Pedro Henrique Ferrari
+
+  static void Main(string[] args) {
+        int a,b, transformador;
+      Console.WriteLine("digite um numero para A");
+      a=int.Parse (Console.ReadLine());
+       Console.WriteLine("digite um numero para B");
+      b=int.Parse (Console.ReadLine());
+      transformador= a;
+      a=b;
+      b=transformador;
+
+
+      Console.WriteLine ("após inverter A={0} e B={1}",a, b);
+    }
+    
+    Exercício 31 Pedro Henrique Ferrari
+    
+    static void Main(string[] args) {
+      int a, x, par =0, impar =0, positivo =0, negativo=0;
+
+      do{
+        Console.Clear();
+        Console.WriteLine("Digite um numero");
+        a = int.Parse(Console.ReadLine());
+
+        if(a > 0){
+          positivo++;
+        }
+        else{
+          negativo++;
+        }
+
+        if(a % 2 == 0){
+          par++;
+        }
+        else{
+          impar++;
+        }
+        Console.WriteLine("Deseja fechar o program (sim = 1, não = 0)");
+        x = int.Parse(Console.ReadLine());
+      }while(x == 0);
+
+      Console.WriteLine("Numero de pares: {0}",par);
+      Console.WriteLine("Numero de impares: {0}", impar);
+      Console.WriteLine("Numero de positivos: {0}", positivo++);
+      Console.WriteLine("Numero de negativos: {0}", negativo++);
+
+    }
+}
+
+
+
+
+Exercício 35 Pedro Henrique Ferrari
+
+using System;
+
+class Program {
+    static void Main(string[] args) {
+                int A, B, C;
+  
+        Console.WriteLine("Digite o lado A=");
+        A = int.Parse(Console.ReadLine());
+		
+        Console.WriteLine("Digite o lado B=");
+        B = int.Parse(Console.ReadLine());
+		
+		    Console.WriteLine("Digite o lado C=");
+        C = int.Parse(Console.ReadLine());
+
+
+		if( A < B + C && B < A + C && C < A + B ){
+      
+			if(A==B && B == C){
+				Console.WriteLine("O triângulo é Eqüilátero.");
+			}
+      else if(A==B || A==C || B==C){
+				Console.WriteLine("O triângulo é Isósceles.");
+			}
+      else{
+				Console.WriteLine("O triângulo é Escaleno.");
+			}
+		}
+      else{
+			Console.WriteLine("Os lados fornecidos não caracterizam um triângulo");
+		}
+
+    }
+
+}
